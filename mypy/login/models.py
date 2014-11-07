@@ -9,5 +9,5 @@ class User(models.Model):
     def __unicode__(self): # 字段格式化成字符串格式
         return self.username
 class UserAdmin(admin.ModelAdmin):
-    list_display = ("username","password")
-admin.site.register(User)
+    list_display = ('username','password')
+admin.site.register(User,UserAdmin)
